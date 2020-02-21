@@ -1,0 +1,20 @@
+@import '../../theme/default.styl'
+
+$common-padding = 16px
+
+.saas-ftselect {
+  position relative
+  z-index 10
+
+  .ant-input {
+    &:focus {
+      box-shadow none
+    }
+  }
+
+  &.dropup {
+    .saas-ftselect-panel {
+      display none
+    }
+  }
+}

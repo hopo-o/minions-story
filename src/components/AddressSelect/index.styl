@@ -1,0 +1,114 @@
+@import '../../theme/default.styl'
+
+$common-padding = 16px
+
+.saas-adselect {
+  position relative
+  z-index 10
+
+  .ant-input {
+    &:focus {
+      box-shadow none
+    }
+  }
+
+  &-panel {
+    position absolute
+    top 0
+    left 0
+    display none
+    width 480px
+    border 1px solid #d9d9d9
+    border-radius 2px
+    background-color white
+    box-shadow 0 2px 8px rgba(0,0,0,0.15)
+
+    .head {
+      border-bottom 1px solid $line-color
+
+      .ant-input {
+        border none
+
+        &:focus {
+          border none
+          box-shadow none
+        }
+      }
+    }
+
+    .tab {
+      padding $common-padding 0
+      border-bottom 1px solid $line-color
+      line-height 14px
+
+      &>div {
+        margin 0 $common-padding
+      }
+    }
+
+    .pane {
+      &-item {
+        display none
+        overflow-y auto
+        padding $common-padding 0
+        height 160px
+        line-height 40px
+
+        &>div {
+          margin 0 $common-padding
+        }
+      }
+
+      &.city {
+        .pane-item.city {
+          display block
+        }
+      }
+
+      &.district {
+        .pane-item.district {
+          display block
+        }
+      }
+
+      &.bizcircle {
+        .pane-item.bizcircle {
+          display block
+        }
+      }
+    }
+
+    .foot {
+      display flex
+      justify-content space-between
+      align-items center
+      height 64px
+      border-top 1px solid $line-color
+
+      &-prefix {
+        flex none
+        margin-left 18px
+
+        .anticon {
+          margin-left 8px
+        }
+      }
+
+      &-action {
+        flex none
+        margin-right 18px
+
+        .ant-btn {
+          margin-left 8px
+          border-radius 2px
+        }
+      }
+    }
+  }
+
+  &.dropdown {
+    .saas-adselect-panel {
+      display block
+    }
+  }
+}

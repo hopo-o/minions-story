@@ -1,0 +1,15 @@
+{
+  "colons": "never",
+  "semicolons": "never",
+  "brackets": "always",
+  "commaSpace": "never",
+  "indentPref": 2,
+  "leadingZero": "always",
+  "mixed": true,
+  "namingConvention": "camelCase",
+  "quotePref": "single",
+  "sortOrder": "grouped",
+  "zIndexNormalize": 10,
+
+  "stylusSupremacy.selectorSeparator": ",\n"
+}

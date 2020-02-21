@@ -1,0 +1,51 @@
+@import '../../theme/default.styl'
+
+$disable-color = $grey-CC
+$normal-color = $grey-33
+
+.saas-text-button {
+  display inline-block
+  color $disable-color
+  text-align center
+  line-height 22px
+  cursor not-allowed
+  user-select none
+
+  .text-button-main {
+    font-size 14px
+  }
+
+  .text-button-sub {
+    color $grey-99
+    font-size 11px
+  }
+
+  &:hover {
+    .text-button-main {
+      color $disable-color
+    }
+
+    .text-button-sub {
+      color $disable-color
+    }
+  }
+
+  &.avaliable {
+    color $normal-color
+    cursor pointer
+
+    &:hover {
+      .text-button-main {
+        color $primary-color
+      }
+
+      .text-button-sub {
+        color $primary-color
+      }
+    }
+
+    &.active {
+      color $primary-color
+    }
+  }
+}
